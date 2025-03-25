@@ -1,5 +1,5 @@
 import Product from "./products";
-function ProductList ({desserts,isPending}){
+function ProductList ({desserts}){
 
     return (
         <div >

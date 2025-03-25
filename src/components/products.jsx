@@ -8,9 +8,9 @@ const alreadyAdded = cart.find((d)=>d.id==id);
 return (
     <div className="desserts-card">
         <picture>
-            <source media="(min-width:400px" srcSet={image.mobile}/>
-            <source media="(min-width:800px" srcSet={image.tablet}/>
-            <source media="(min-width:998px" srcSet={image.desktop}/>
+            <source media="(max-width:400px)" srcSet={image.mobile}/>
+            <source media="(max-width:800px)" srcSet={image.tablet}/>
+            <source media="(min-width:998px)" srcSet={image.desktop}/>
             <img className="dessert-card-image" src={image.thumbnail} alt={name}/>
         </picture>
 
